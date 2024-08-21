@@ -28,4 +28,4 @@ Agradecimientos
 
 Al ayudante Carlo por orientarme durante el desarrollo del código 
 
-A mi profesor por los consejos y correcciones realizadas
+Al profesor Óscar por los consejos y correcciones realizadas
