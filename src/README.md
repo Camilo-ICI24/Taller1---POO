@@ -26,6 +26,6 @@ c.cifuentes14@ufromail.cl
 
 Agradecimientos
 
-Al ayudante por orientarme durante el desarrollo del código 
+Al ayudante Carlo por orientarme durante el desarrollo del código 
 
 A mi profesor por los consejos y correcciones realizadas
