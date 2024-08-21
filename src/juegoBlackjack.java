@@ -4,12 +4,14 @@ import java.util.Scanner;
 class juegoBlackjack {
 
     public static void main(String[] args) {
-        inicializarCartasJuego();
+        String[][] cartasJuego = crearMatrizCartas();
+        inicializarCartasJuego(cartasJuego);
         menu();
     }
 
-    public static void crearMatrizCartas() {
+    public static String[][] crearMatrizCartas() {
         String[][] cartas = new String[12][2]; // Esta matriz será de 12 x 2 ya que se desean doce cartas como máximo y cada carta tiene su puntaje particular
+        return cartas;
     }
 
     public static void agregarCartas(String[][] m, String nombreCarta, String puntaje) {
@@ -48,12 +50,12 @@ class juegoBlackjack {
     }
 
 
-    public static void jugarJuego() {
+    public static void jugarJuego(String[][] m) {
         int puntosJugador1 = 0;
         int puntosJugador2 = 0;
-        obtenerCartas();
-        obtenerCartas();
-        obtenerCartas();
+        obtenerCartas(m);
+        obtenerCartas(m);
+        obtenerCartas(m);
     }
 
     public static void opcionesMenu() {
@@ -75,7 +77,7 @@ class juegoBlackjack {
             opcionesMenu();
             int decision = opcion.nextInt();
             if (decision == 1) {
-                jugarJuego();
+                jugarJuego(cartasJuego);
 
             } else if (decision == 2) {
                 salir();
