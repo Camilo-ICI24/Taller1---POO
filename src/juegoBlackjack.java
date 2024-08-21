@@ -16,8 +16,8 @@ class juegoBlackjack {
 
     public static void agregarCartas(String[][] m, String nombreCarta, String puntaje) {
         crearMatrizCartas();
-        for (int fila = 1; fila < m.length(); fila++) {
-            for (int columna = 1; columna < 3; columna++) {
+        for (int fila = 1; fila < m.length; fila++) {
+            for (int columna = 1; columna < 2; columna++) {
                 if (m[fila][columna] == null) {
                     m[fila][0] = nombreCarta;
                     m[fila][1] = puntaje;
@@ -53,9 +53,13 @@ class juegoBlackjack {
     public static void jugarJuego(String[][] m) {
         int puntosJugador1 = 0;
         int puntosJugador2 = 0;
-        obtenerCartas(m);
-        obtenerCartas(m);
-        obtenerCartas(m);
+        String[] manoJugador1= new String[2];
+        manoJugador1[0] = obtenerCartas(m);
+        manoJugador1[1] = obtenerCartas(m);
+        manoJugador1[2] = obtenerCartas(m);
+        if (puntosJugador1 > 20 && puntosJugador2 > 20) {
+            System.out.println("FIN DEL JUEGO");
+        }
     }
 
     public static void opcionesMenu() {
@@ -66,10 +70,10 @@ class juegoBlackjack {
 
     public static void salir() {
         System.out.println("¡Gracias por jugar BlackJackva");
-        break;
     }
 
     public static void menu() {
+        String[][] cartasParaJugar = crearMatrizCartas();
         Scanner opcion = new Scanner(System.in);
         System.out.println("¡Bienvenido a BlackJackva!");
         System.out.println("-----beta v08.21-----");
@@ -77,10 +81,10 @@ class juegoBlackjack {
             opcionesMenu();
             int decision = opcion.nextInt();
             if (decision == 1) {
-                jugarJuego(cartasJuego);
-
+                jugarJuego(cartasParaJugar);
             } else if (decision == 2) {
                 salir();
+                break;
             }
         }
 
