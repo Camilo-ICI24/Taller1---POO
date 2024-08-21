@@ -8,32 +8,18 @@ Blackjackva es un programa ejecutado y compilado en Java destinado a la entreten
 
 Instalación
 
-Requisitos previos: Herramientas, versiones de software, dependencias, etc.
-Pasos para instalar el proyecto localmente.
+Para ejecutar este código, se recomienda descargar y utilizar el programa IntelliJ, que es el entorno donde el código fue creado y compilado.
 
 
-5. Uso
-   Ejemplos de cómo usar el proyecto.
-   Instrucciones sobre las funciones principales.
-   Capturas de pantalla o gifs (si es necesario) para mostrar el funcionamiento.
-6. Configuración (opcional)
-   Instrucciones para configurar opciones específicas del proyecto.
-   Variables de entorno, archivos de configuración, etc.
-7. Pruebas
-   Instrucciones para ejecutar las pruebas.
-   Descripción del framework de pruebas utilizado.
-   Ejemplos de comandos para ejecutar pruebas.
-8. Despliegue (opcional)
-   Instrucciones para desplegar el proyecto en un entorno de producción.
-9. Contribuciones
-   Guía para contribuir al proyecto.
-   Normas de codificación, estilo, pull requests, etc.
+Instrucciones
 
-Licencia
-    Información sobre la licencia del proyecto.
-Autores
+Primero el programa internamente va a definir las doce cartas de la baraja global a utilizar, cartas que se van a almacenar en una matriz definida para ello.
 
-    Nombres de los autores y sus roles en el proyecto.
-    Información de contacto.
-Agradecimientos (opcional)
-    Reconocimientos a personas, herramientas, u otros proyectos que ayudaron en el desarrollo.
+Autor
+
+Camilo Cifuentes (creador del código)
+c.cifuentes14@ufromail.cl
+
+Agradecimientos
+
+
