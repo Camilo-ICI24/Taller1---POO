@@ -1,13 +1,10 @@
+import java.util.Random;
 import java.util.Scanner;
 
 class juegoBlackjack {
 
     public static void main(String[] args) {
-        agregarCartas();
         inicializarCartasJuego();
-        obtenerCartas();
-        jugarJuego();
-        salir();
         menu();
     }
 
@@ -44,14 +41,30 @@ class juegoBlackjack {
         agregarCartas(m, "cartaNueve", "9");
     }
 
-    public static void obtenerCartas() {
+    public static String obtenerCartas(String[][] m) {
+        Random robo = new Random();
+        int saque = robo.nextInt(13);
+        return m[saque][1];
+    }
 
+
+    public static void jugarJuego() {
+        int puntosJugador1 = 0;
+        int puntosJugador2 = 0;
+        obtenerCartas();
+        obtenerCartas();
+        obtenerCartas();
     }
 
     public static void opcionesMenu() {
         System.out.println("Seleccione una opción: ");
         System.out.println("1. Jugar");
         System.out.println("2. Salir");
+    }
+
+    public static void salir() {
+        System.out.println("¡Gracias por jugar BlackJackva");
+        break;
     }
 
     public static void menu() {
@@ -62,11 +75,10 @@ class juegoBlackjack {
             opcionesMenu();
             int decision = opcion.nextInt();
             if (decision == 1) {
-
+                jugarJuego();
 
             } else if (decision == 2) {
-                System.out.println("¡Gracias por jugar BlackJackva");
-                break;
+                salir();
             }
         }
 
